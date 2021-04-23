@@ -134,7 +134,7 @@ p {
   transform: scale(1.1);
   background: linear-gradient(135deg, hsl(0, 95%, 85%), hsl(0, 95%, 66%));
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  transition: ease 1s;
+  transition: ease 1.5s;
 }
 
 /* Mobile View */
@@ -156,9 +156,9 @@ p {
     padding: 10% 10% 10% 10%;
   }
   h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     letter-spacing: 1rem;
-    line-height: 3rem;
+    line-height: 4rem;
     text-align: center;
   }
   p {
