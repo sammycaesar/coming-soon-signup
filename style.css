@@ -32,7 +32,7 @@ p {
 }
 
 .text {
-  padding-right: 215px;
+  padding-right: 12vw;
   margin-top: 2rem;
 }
 
@@ -70,6 +70,8 @@ p {
   height: 100vh;
 }
 
+/* Subscripton Form */
+
 .subscribe {
   margin-top: 3rem;
   display: flex;
@@ -85,7 +87,7 @@ p {
   background-color: transparent;
   border: none;
   width: 100%;
-  padding-left: 3rem;
+  padding-left: 2rem;
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -94,9 +96,9 @@ p {
   opacity: 1;
 }
 
-.icon {
+.subscribe button {
   height: 2.9rem;
-  width: 7rem;
+  width: 6rem;
   border-radius: 4rem;
   border: none;
   background: linear-gradient(
@@ -104,6 +106,41 @@ p {
     hsl(0, 100%, 89%) 0%,
     hsl(0, 100%, 72%) 100%
   );
+}
+
+.error-btn {
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  top: 0.75rem;
+  right: 25%;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.error-text {
+  padding: 1rem 1rem;
+  color: hsl(0, 95%, 66%);
+  transition: 0.5s;
+  opacity: 0;
+}
+
+#form {
+  border: 1px solid hsl(0, 95%, 66%);
+}
+
+/* Active State: Subscription Form */
+
+.subscribe input:focus,
+.subscribe button:hover {
+  outline: none;
+}
+
+.subscribe button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, hsl(0, 95%, 85%), hsl(0, 95%, 66%));
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: ease 1s;
 }
 
 /* Mobile View */

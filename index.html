@@ -37,12 +37,26 @@
             announcements and our launch deals.
           </p>
 
-          <form class="subscribe">
-            <input type="email" placeholder="Email Address" />
-            <button type="submit" class="icon">
+          <form id="form" class="subscribe">
+            <input
+              type="email"
+              placeholder="Email Address"
+              id="email"
+              class="placeholder"
+            />
+            <img
+              src="/images/icon-error.svg"
+              alt="Error Icon"
+              class="error-btn"
+              id="error-btn"
+            />
+            <button id="submit-btn" type="submit" class="icon">
               <img src="images/icon-arrow.svg" alt="Arrow submit button" />
             </button>
           </form>
+          <div class="error-text" id="error-text">
+            Please provide a valid email
+          </div>
         </div>
       </div>
 
@@ -50,5 +64,7 @@
         <img class="wine-desktop" src="images/wine" />
       </div>
     </div>
+
+    <script src="main.js"></script>
   </body>
 </html>
