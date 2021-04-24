@@ -55,18 +55,18 @@ p {
   background-size: cover;
 }
 
-.wine-mobile {
-  display: none;
-}
-
 .block-2 {
-  /* Will occupy 40% */
+  /* Will occupy 20% */
   flex-grow: 2;
 }
 
 .block-2 img {
   object-fit: cover;
   height: 100vh;
+}
+
+.wine-mobile {
+  display: none;
 }
 
 /* Subscripton Form */
@@ -90,11 +90,6 @@ p {
   font-size: 1rem;
 }
 
-::placeholder {
-  color: hsl(0, 36%, 70%);
-  opacity: 1;
-}
-
 .subscribe button {
   height: 2.9rem;
   width: 6rem;
@@ -105,6 +100,11 @@ p {
     hsl(0, 100%, 89%) 0%,
     hsl(0, 100%, 72%) 100%
   );
+}
+
+::placeholder {
+  color: hsl(0, 36%, 70%);
+  opacity: 1;
 }
 
 .error-btn {
